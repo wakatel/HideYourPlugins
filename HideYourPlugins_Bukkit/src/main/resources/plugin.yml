@@ -1,0 +1,32 @@
+name: HideYourPlugins_Bukkit
+version: '${project.version}'
+api-version: 1.8
+main: me.wakatel.hideyourplugins_bukkit.HideYourPlugins_Bukkit
+depend: [ ProtocolLib ]
+authors: [ wakatel ]
+description: Hide Plugin, Anti TabComplete, Disable Suggestion, Spoof Server Version. HackClients Cannot Bypass!
+
+commands:
+  hypreload:
+    description: Reload HideYourPlugins configuration.
+    permission: hyp.reload
+permissions:
+  hyp.*:
+    default: op
+    children:
+      hyp.reload: true
+      hyp.bypass.*: true
+  hyp.reload:
+    default: op
+  hyp.bypass.*:
+    default: op
+    children:
+      hyp.bypass.commands: true
+      hyp.bypass.syntax: true
+      hyp.bypass.version: true
+  hyp.bypass.commands:
+    default: op
+  hyp.bypass.syntax:
+    default: op
+  hyp.bypass.version:
+    default: op

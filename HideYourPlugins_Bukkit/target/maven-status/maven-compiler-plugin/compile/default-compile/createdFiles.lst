@@ -1,0 +1,6 @@
+me\wakatel\hideyourplugins_bukkit\Events\SyntaxBlocker.class
+me\wakatel\hideyourplugins_bukkit\Events\VersionSpoofer.class
+me\wakatel\hideyourplugins_bukkit\Events\PluginHider.class
+me\wakatel\hideyourplugins_bukkit\Commands\ReloadCommand.class
+me\wakatel\hideyourplugins_bukkit\Packets\TabComplete.class
+me\wakatel\hideyourplugins_bukkit\HideYourPlugins_Bukkit.class
