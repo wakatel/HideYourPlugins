@@ -1,0 +1,37 @@
+#HideYourPlugin configurations
+#Reload this plugin "/hypreload" (hyp.reload)
+plugin:
+  prefix: "&c&lHYP &8> "
+  no-perm: "&cIm sorry but you don't have permission to perform this command. Please contact the server administrator if you believe that is an error"
+  reload-message: "&aConfig Reloaded!"
+
+#Change "/pl" and "/plugins" feedback
+#Bypass permission (hyp.bypass.command)
+plugin-hider:
+  enabled: true
+  #set to 'none' if you want without message
+  message: '&fPlugins (3): &aSecured&f, &aBy&f, &aHideYourPlugins'
+  #Remove 'ver' and 'version' if you had version-spoofer enabled
+  commands:
+    - '?'
+    - 'pl'
+    - 'plugins'
+    - 'about'
+    - 'help'
+    - 'ver'
+    - 'version'
+
+#Blocks ":" commands e.g."/<plugin>:<command>"
+#Bypass permission (hyp.bypass.syntax)
+syntax-blocker:
+  enabled: true
+  #set to 'none' if you want without message
+  message: "&cIm sorry but you don't have permission to perform this command. Please contact the server administrator if you believe that is an error"
+
+#Change "/version" and "/ver" command feedback
+#Bypass permission (hyp.bypass.version)
+#NOTE: You need to remove 'ver' and 'version' from plugin-hider.commands if you want to use this version-spoofer
+version-spoofer:
+  enabled: false
+  #set to 'none' if you want without message
+  message: "&7This server is using HideYourPlugins version!"
